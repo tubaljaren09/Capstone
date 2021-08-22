@@ -34,16 +34,13 @@
     transition: 0.5s;
     padding-top: 60px;
 }
-.main .navbar .navbar-container .menu-container a{
+.main .navbar .navbar-container .menu-container a:not(.closebtn){
     font-size:2rem;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     color: #818181;
     display: block;
     transition: 0.3s;
-}
-.main .navbar .navbar-container .menu-container a:hover{
-    color:rgb(255, 255, 255);
 }
 .main .navbar .navbar-container .menu-container a.active{
     color:rgb(255, 255, 255);
@@ -54,6 +51,11 @@
     right:25px;
     font-size:3.6rem;
     cursor:pointer;
+    padding:8px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
 .main .hero{
     background-image:url('../images/background.gif');
