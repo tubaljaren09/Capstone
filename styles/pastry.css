@@ -29,14 +29,15 @@
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #111;
+    background-image:url('../images/background-nav.jpg');
+    background-size:cover;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
 }
 .main .navbar .navbar-container .menu-container a:not(.closebtn){
     font-size:2rem;
-    padding: 8px 8px 8px 32px;
+    padding: 25px 8px 5px 15px;
     text-decoration: none;
     color: #818181;
     display: block;
@@ -48,8 +49,8 @@
 .main .navbar .navbar-container .menu-container .closebtn{
     position: absolute;
     top:0;
-    right:25px;
-    font-size:3.6rem;
+    right:10px;
+    font-size:6rem;
     cursor:pointer;
     padding:8px;
     text-decoration: none;
