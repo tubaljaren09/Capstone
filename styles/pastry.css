@@ -74,15 +74,18 @@
 .main .hero .hero-container .greet1 h1{
     font-size:2rem;
     margin-top:110px;
+    color:red;
 }
 .main .hero .hero-container .info1 p{
     font-size:1.5rem;
     line-height:20px;
+    color: #777;
 }
 .main .hero .hero-container .info2 p{
     font-size:1.5rem;
     line-height:20px;
     margin-bottom:30px;
+    color: #777;
 }
 .main .hero .hero-container .pastries{
     width:300px;

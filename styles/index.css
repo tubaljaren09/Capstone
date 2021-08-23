@@ -74,20 +74,24 @@
 .main .hero .hero-container .greet h1{
     font-size:2rem;
     margin-top:110px;
+    color: #fe5f55;
 }
 .main .hero .hero-container .intro p{
     font-size:1.5rem;
     line-height:20px;
+    color: #777;
 }
 .main .hero .hero-container .terms{
     margin-bottom:30px;
 }
 .main .hero .hero-container .terms h1{
     font-size:2rem;
+    color: #43423F;
 }
 .main .hero .hero-container .terms p{
-    font-size:1.5rem;
+    font: italic 1.5rem arial, sans-serif;
     line-height:25px;
+    color: #362C20;
 }
 @keyframes transitionIn{
     from{

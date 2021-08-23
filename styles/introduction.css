@@ -73,28 +73,35 @@
 .main .hero .hero-container .greet1 h1{
     font-size:2rem;
     margin-top:110px;
+    color:red;
 }
 .main .hero .hero-container .info1 p{
     font-size:1.5rem;
     line-height:20px;
+    color: #777;
 }
 .main .hero .hero-container .greet2 h1{
     font-size:2rem;
+    color:red;
 }
 .main .hero .hero-container .info2 p{
     font-size:1.5rem;
     line-height:20px;
+    color: #777;
 }
 .main .hero .hero-container .info3 h1{
     font-size:1.7rem;
+    color:red;
 }
 .main .hero .hero-container .info3 p{
     font-size:1.5rem;
     line-height:20px;
+    color: #777;
 }
 .main .hero .hero-container .source p{
     font-size:1.2rem;
     margin-bottom:30px;
+    color: #777;
 }
 @keyframes transitionIn{
     from{
