@@ -80,6 +80,10 @@
     margin-top:110px;
     color:red;  
 }
+.main .hero .hero-container .greet2 h1{
+    font-size:2rem;
+    color:red;  
+}
 .main .hero .hero-container .info1 p{
     font-size:1.5rem;
     line-height:20px;
