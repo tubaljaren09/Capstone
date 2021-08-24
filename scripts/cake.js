@@ -11,15 +11,20 @@ for ( i = 0; i < buttons.length; i += 1) {
 } 
 /* Close modal */
 let closes = document.getElementsByClassName("close");
-let iframe = document.querySelectorAll('.video');
 for ( i = 0; i < closes.length; i += 1) {
     closes[i].onclick = function() {
         if(this.id === "close1"){
             document.querySelector('.bg-modal1').style.display = "none";
-            iframe[0].src = iframe.src;
+            let iframe1 = document.getElementById('video1');
+            let videosrc = iframe1.getAttribute('src');
+            iframe1.src = '';
+            iframe1.src = videosrc;
         }else if(this.id === "close2"){
             document.querySelector('.bg-modal2').style.display = "none";
-            iframe[1].src = iframe.src;
+            let iframe2 = document.getElementById('video2');
+            let videosrc = iframe2.getAttribute('src');
+            iframe2.src = '';
+            iframe2.src = videosrc;
         }
     }
 }
