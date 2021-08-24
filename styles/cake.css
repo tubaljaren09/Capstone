@@ -110,7 +110,7 @@
 /* Modal */
 .main .hero .hero-container .bg-modal{
     width:100%;
-    height:200px;
+    height:300px;
 	display: none; 
 	justify-content: center;
 	align-items: center;
@@ -123,6 +123,7 @@
 }
 .main .hero .hero-container .bg-modal .modal-contents .close{
     font-size:3rem;
+    cursor:pointer;
 }
 @keyframes transitionIn{
     from{
