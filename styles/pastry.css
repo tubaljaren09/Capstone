@@ -80,6 +80,10 @@
     margin-top:110px;
     color:red;
 }
+.main .hero .hero-container .bar{
+    width:300px;
+    height:20px;
+}
 .main .hero .hero-container .greet2 h1{
     font-size:2rem;
     color:red;
@@ -135,4 +139,23 @@
         opacity:1;
         transform:translateX(0);
     }
+}
+/* Extra small devices, Phones */
+@media (min-width:480px){
+    .main .hero .hero-container .bar{
+        width:450px;
+        height:20px;
+    }
+}
+/* Small devices, Tablets */
+@media (min-width:768px){
+
+}
+/* Medium devices, Desktop */
+@media (min-width:992px){
+
+}
+/* Large devices, Wide screens */
+@media (min-width:1200px){
+
 }
