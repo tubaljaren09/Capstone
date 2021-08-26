@@ -132,7 +132,10 @@
 }
 /* Small devices, Tablets */
 @media (min-width:768px){
-
+    .main .hero .hero-container .bar{
+        width:750px;
+        height:20px;
+    }
 }
 /* Medium devices, Desktop */
 @media (min-width:992px){

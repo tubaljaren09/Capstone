@@ -155,7 +155,23 @@
 }
 /* Small devices, Tablets */
 @media (min-width:768px){
-
+    .main .hero .hero-container .bar{
+        width:750px;
+        height:20px;
+    }
+    .main .hero .hero-container .contacts{
+        width:250px;
+        height:250px;
+    }
+    .main .hero .hero-container .greet1 h1{
+        font-size:2.5rem;
+        margin-top:110px;
+        color:red;
+    }
+    .main .hero .hero-container .greet2 h1{
+        font-size:2.5rem;
+        color:red;
+    }
 }
 /* Medium devices, Desktop */
 @media (min-width:992px){
