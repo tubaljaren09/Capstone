@@ -129,6 +129,21 @@
     color: #777;
     line-height:25px;
 }
+.main .navbar .navbar-container .menu-container .home-small{
+    display:none;
+}
+.main .navbar .navbar-container .menu-container .intro-small{
+    display:none;
+}
+.main .navbar .navbar-container .menu-container .cake-small{
+    display:none;
+}
+.main .navbar .navbar-container .menu-container .pastry-small{
+    display:none;
+}
+.main .navbar .navbar-container .menu-container .contact-small{
+    display:none;
+}
 @keyframes transitionIn{
     from{
         opacity:0;
@@ -169,7 +184,63 @@
 }
 /* Medium devices, Desktop */
 @media (min-width:992px){
-
+    .main .navbar{
+        width:100%;
+        height:80px;
+        background-image:url('../images/background-nav.jpg');
+        position:fixed;
+    }
+    .main .navbar .navbar-container .hamburger-container{
+        display:none;
+    }
+    .main .navbar .navbar-container .menu-container .closebtn{
+        display:none;
+    }
+    .main .navbar .navbar-container .menu-container{
+        all:unset;
+        display:flex;
+    }
+    .main .navbar .navbar-container .menu-container .home-big{
+        display:none;
+    }
+    .main .navbar .navbar-container .menu-container .home-small{
+        display:block;
+    }
+    .main .navbar .navbar-container .menu-container .intro-big{
+        display:none;
+    }
+    .main .navbar .navbar-container .menu-container .intro-small{
+        display:block;
+    }
+    .main .navbar .navbar-container .menu-container .cake-big{
+        display:none;
+    }
+    .main .navbar .navbar-container .menu-container .cake-small{
+        display:block;
+    }
+    .main .navbar .navbar-container .menu-container .pastry-big{
+        display:none;
+    }
+    .main .navbar .navbar-container .menu-container .pastry-small{
+        display:block;
+    }
+    .main .navbar .navbar-container .menu-container .contact-big{
+        display:none;
+    }
+    .main .navbar .navbar-container .menu-container .contact-small{
+        display:block;
+    }
+    .main .navbar .navbar-container{
+        width:90%;
+        margin:auto;
+        height:100%;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+    .main .navbar .navbar-container .menu-container a:not(.closebtn){
+        all:unset;
+    }
 }
 /* Large devices, Wide screens */
 @media (min-width:1200px){
