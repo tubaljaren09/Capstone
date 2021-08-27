@@ -75,56 +75,56 @@
     padding:20px;
     box-sizing:border-box;
 }
-.main .hero .hero-container .greet .welcomelogo{
+.main .hero .hero-container .terms-right{
+    width:100%;
+    margin:auto;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:30px;
+    padding:20px;
+    box-sizing:border-box;
+}
+.main .hero .hero-container .terms-right .greet .welcomelogo{
     margin-top:110px;
     width:300px;
     height:150px;
 }
-.main .hero .hero-container .welcomegif{
+.main .hero .hero-container .terms-right .welcomegif{
     width:280px;
     height:300px;
 }
-.main .hero .hero-container .intro p{
+.main .hero .hero-container .terms-right .intro p{
     font-size:1.5rem;
     line-height:20px;
     color: #777;
 }
-.main .hero .hero-container .bar{
+.main .hero .hero-container .terms-right .bar{
     width:300px;
     height:20px;
 }
-.main .hero .hero-container .footer{
-    width:100%;
-    height:100%;
-    display:flex;
-    justify-content:space-evenly;
-    gap:20px;
-}
-.main .hero .hero-container .footer .terms-left{
+.main .hero .hero-container .terms-left{
     margin-bottom:30px;
 }
-.main .hero .hero-container .footer .terms-left h1{
+.main .hero .hero-container .terms-left h1{
     font-size:2rem;
     color: #43423F;
 }
-.main .hero .hero-container .footer .terms-left p{
+.main .hero .hero-container .terms-left p{
     font: italic 1.5rem arial, sans-serif;
     line-height:25px;
     color: #362C20;
 }
-.main .hero .hero-container .footer .terms-right{
-    margin-bottom:30px;
-    display:none;
-}
-.main .hero .hero-container .footer .terms-right h1{
+.main .hero .hero-container .terms-right .bottom h1{
     color: #ff499e;
     font-size:2rem;
 }
-.main .hero .hero-container .footer .terms-right p{
+.main .hero .hero-container .terms-right .bottom p{
     font: italic 1.5rem arial, sans-serif;
     color:rgb(0, 0, 0);
 }
-.main .hero .hero-container .footer .terms-right ul li{
+.main .hero .hero-container .terms-right .bottom ul li{
     font-size:1.5rem;
     color: #777;
     line-height:25px;
@@ -144,6 +144,9 @@
 .main .navbar .navbar-container .menu-container .contact-small{
     display:none;
 }
+.main .hero .hero-container .terms-left{
+    display:none;
+}
 @keyframes transitionIn{
     from{
         opacity:0;
@@ -157,33 +160,30 @@
 }
 /* Extra small devices, Phones */
 @media (min-width:480px){
-    .main .hero .hero-container .bar{
+    .main .hero .hero-container .terms-right .bar{
         width:450px;
         height:20px;
     }
 }
 /* Small devices, Tablets */
 @media (min-width:768px){
-    .main .hero .hero-container .footer .terms-right{
-        margin-bottom:30px;
-        display:block;
-    }
-    .main .hero .hero-container .bar{
+    .main .hero .hero-container .terms-right .bar{
         width:750px;
         height:20px;
     }
-    .main .hero .hero-container .greet .welcomelogo{
+    .main .hero .hero-container .terms-right .greet .welcomelogo{
         margin-top:110px;
         width:350px;
         height:200px;
     }
-    .main .hero .hero-container .welcomegif{
+    .main .hero .hero-container .terms-right .welcomegif{
         width:450px;
         height:350px;
     }
 }
 /* Medium devices, Desktop */
 @media (min-width:992px){
+    /* Navbar ---------------------------------------------------------*/
     .main .navbar{
         width:100%;
         height:80px;
@@ -240,6 +240,38 @@
     }
     .main .navbar .navbar-container .menu-container a:not(.closebtn){
         all:unset;
+    }
+    /* Hero -----------------------------------------------------------*/
+    .main .hero .hero-container{
+        animation:transitionIn 0.75s;
+        width:80%;
+        margin:auto;
+        height:100%;
+        display:flex;
+        flex-direction:row;
+        align-items:flex-start;
+        background:rgba(255, 255, 255, 0.3);
+        padding:20px;
+        box-sizing:border-box;
+    }
+    .main .hero .hero-container .terms-left{
+        display:block;
+        flex-basis: 0%;
+        flex-grow: 1;
+        margin-top:110px;
+    }
+    .main .hero .hero-container .terms-right{
+        flex-basis: 0%;
+        flex-grow: 2;
+    }
+    .main .hero .hero-container .terms-right .bar{
+        width:500px;
+        height:20px;
+    }
+    .main .hero .hero-container .terms-right .greet .welcomelogo{
+        margin-top:80px;
+        width:300px;
+        height:150px;
     }
 }
 /* Large devices, Wide screens */
